@@ -5,6 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 
-
+char *cmd = NULL, *cmd_cpy = NULL, *token = NULL, *delim = NULL, **argv = NULL;
+int *argc, x;
 
 #endif
