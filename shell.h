@@ -6,6 +6,7 @@
 #include <unistd.h>
 
 char *cmd = NULL, *cmd_cpy = NULL, *token = NULL, *delim = NULL, **argv = NULL;
-int *argc, x;
+int argc = 0, x = 0;
+size_t buf = 0;
 
 #endif
