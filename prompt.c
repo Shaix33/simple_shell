@@ -9,17 +9,14 @@ int main(void)
 	printf("$ ");
 	if (getline(&cmd, &buf, stdin) == -1)
 	{
-		printf("Error");
+		return (-1);
 	}
-	cmd_cpy = strdup(cmd);
+	cmd_cpy = strtok(cmd);
 	token = strtok(cmd, delim);
 
-	while (cmd[x])
+	while (token)
 	{
 		token = strtok(NULL, delim);
 		argc++;
 	}
-	printf("%s\n", token);
-	printf("%d\n", argc);
-	return (0);
 }
