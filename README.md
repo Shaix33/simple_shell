@@ -1,5 +1,5 @@
 ## <ins> Simple shell team project by:</ins>
-> * Themba Kelvin &
+> * Themba Kevin &
 > * Mumbi Wangari.
 
 # Betty would be proud
