@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-char *cmd = NULL, *cmd_cpy = NULL, *token = NULL, *delim = NULL, **argv = NULL;
+char *cmd = NULL, *cmd_cpy = NULL, *token = NULL, *delim = " \n", **argv = NULL;
 int argc = 0, x = 0;
 size_t buf = 0;
 
