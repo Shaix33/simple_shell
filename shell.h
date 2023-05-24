@@ -6,12 +6,16 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+extern char **environ;
+int buffsize = 64, x = 0;
+
 char *cmd = NULL, *cmd_cpy = NULL, *token = NULL, *delim = " \n", **argv = NULL;
-int argc = 0, x = 0;
 size_t buf = 0;
 
-void shell_interactive(void);
+char *builtins_list[] = {"cd", "environ", "help", "exit"};
+int (*built_ins[])(char **) = {&_cd, _environ, _help, _exit};
 
-void shell_no_interactive(void);
+char split_args(char *cmd);
+char read_args(void);
 
 #endif
