@@ -1,39 +1,17 @@
 #include "shell.h"
 
 /**
-* read_stream - reads input from the stream
-*
-* Return: pointer to the stream
+* read_line - reads input
+* @i_eof: return value of getline function
+* Return: string
 */
 
-char read_stream(void)
+char *read_line(int *i_eof)
 {
-	int buffsize = 1024;
-	int x = 0;
-	char *input = malloc(sizeof(char *) *buffsize);
-	int count;
+	char *input = NULL;
+	size_t bufsize = 0;
 
-	if (input == NULL)
-	{
-		perror("Error reading input");
-		exit(EXIT_FAILURE);
-	}
-	while (1)
-	{
-		count = getchar();
-		if (count == EOF)
-		{
-			free(input);
-			exit(EXIT_FAILURE);
-		}
-		else if (count == '\n')
-		{
-			input[x] = '\0';
-			return (input);
-		}
-		else
-		{
-			input[x] = count;
-		}
-	}
+	*i_eof = getline(&input, &bufsize, stdin);
+
+	return (input);
 }
