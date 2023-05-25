@@ -2,7 +2,7 @@
 
 /**
 * is_cdir - checks ":" in cd
-* @path:
+* @path: the path
 * @i: int pointer of index.
 * Return: 1
 */

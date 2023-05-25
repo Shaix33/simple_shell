@@ -5,7 +5,7 @@
 * Return: nothing
 */
 
-void aux_help_env(void)
+void help_env(void)
 {
 	char *help = "env: env [option] [name=value] [command [args]]\n\t";
 
@@ -20,7 +20,7 @@ void aux_help_env(void)
 * Return: nothing
 */
 
-void aux_help_setenv(void)
+void help_setenv(void)
 {
 
 	char *help = "setenv: setenv (const char *name, const char *value,";
@@ -37,7 +37,7 @@ void aux_help_setenv(void)
 * Return: nothing
 */
 
-void aux_help_unsetenv(void)
+void help_unsetenv(void)
 {
 	char *help = "unsetenv: unsetenv (const char *name)\n\t";
 
@@ -52,7 +52,7 @@ void aux_help_unsetenv(void)
 * Return: nothing
 */
 
-void aux_help_general(void)
+void help_general(void)
 {
 	char *help = "^-^ bash, version 1.0(1)-release\n";
 
@@ -76,7 +76,7 @@ void aux_help_general(void)
 * Return: nothing
 */
 
-void aux_help_exit(void)
+void help_exit(void)
 {
 	char *help = "exit: exit [n]\n Exit shell.\n";
 

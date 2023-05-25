@@ -13,7 +13,7 @@ int exec_args(char **args)
 	}
 	for (x = 0; x < sizeof(builtins_list) / sizeof(char *); x++)
 	{
-		if(strcmp(args[0], builtins_list[x]) == 0)
+		if (strcmp(args[0], builtins_list[x]) == 0)
 		{
 			return ((*built_ins[x])(args));
 		}

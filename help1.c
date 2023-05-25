@@ -5,7 +5,7 @@
 * Return: nothing
 */
 
-void aux_help(void)
+void help(void)
 {
 	char *help = "help: help [-dms] [pattern ...]\n";
 
@@ -21,7 +21,7 @@ void aux_help(void)
 * Return: nothing
 */
 
-void aux_help_alias(void)
+void help_alias(void)
 {
 	char *help = "alias: alias [-p] [name[=value]...]\n";
 
@@ -35,7 +35,7 @@ void aux_help_alias(void)
 * Return: nothing
 */
 
-void aux_help_cd(void)
+void help_cd(void)
 {
 	char *help = "cd: cd [-L|[-P [-e]] [-@]] [dir]\n";
 
