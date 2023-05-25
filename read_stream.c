@@ -1,11 +1,9 @@
 #include "shell.h"
-
 /**
-* read_stream - reads input from the stream
-*
-* Return: pointer to the stream
-*/
-
+ * read_stream - reads input from the stream
+ *
+ * Return: pointer to the stream
+ */
 char read_stream(void)
 {
 	int buffsize = 1024;
@@ -34,6 +32,3 @@ char read_stream(void)
 		else
 		{
 			input[x] = count;
-		}
-	}
-}
